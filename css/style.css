@@ -1,0 +1,191 @@
+/* =========================================
+   Reset e Stili Base
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f4f4f4; /* Grigio chiaro per lo sfondo della pagina */
+    padding: 20px;
+}
+
+/* =========================================
+   Layout Principale
+   ========================================= */
+.container {
+    max-width: 800px;
+    margin: 40px auto; /* Centra il container */
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Ombra leggera */
+}
+
+/* =========================================
+   Tipografia
+   ========================================= */
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #FF7F00; /* Arancione Babbel */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f9f9f9;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 35px;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 24px;
+    font-size: 1.125rem; /* Circa 18px per leggibilità */
+    color: #444;
+}
+
+strong {
+    color: #000;
+    font-weight: 700;
+}
+
+ul {
+    margin-bottom: 25px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   Componenti
+   ========================================= */
+
+/* Box Informativo Arancione */
+.info-box {
+    background-color: #fff8e1; /* Sfondo arancio molto chiaro */
+    border-left: 5px solid #FF7F00;
+    padding: 25px;
+    margin: 35px 0;
+    border-radius: 4px;
+}
+
+.info-box p {
+    margin-bottom: 0;
+}
+
+/* Placeholder Immagine */
+.img-placeholder {
+    width: 100%;
+    height: 350px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: 2px dashed #ccc;
+}
+
+/* =========================================
+   Call to Action (CTA)
+   ========================================= */
+.cta-container {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-color: #fafafa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cta-text {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF7F00;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 50px; /* Bottone a pillola */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 127, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #e67300;
+    transform: translateY(-3px); /* Effetto sollevamento */
+    box-shadow: 0 6px 15px rgba(255, 127, 0, 0.4);
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.85rem;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+}
+
+/* =========================================
+   Responsive Design (Mobile)
+   ========================================= */
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        padding: 25px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        width: 100%; /* Bottone a larghezza piena su mobile */
+        display: block;
+        text-align: center;
+    }
+    
+    .img-placeholder {
+        height: 200px;
+    }
+}
